@@ -14,5 +14,5 @@
 
 #include "navigator/navigator.hpp"
 
-namespace hal::navigator {  // NOLINT
+namespace hal::navigator {
 }  // namespace hal::navigator
