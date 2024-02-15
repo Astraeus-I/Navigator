@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace hal::navigator {     // NOLINT
-extern void navigator_test();  // NOLINT
+namespace hal::navigator {
+extern void navigator_test();
 }  // namespace hal::navigator
 
 int main()

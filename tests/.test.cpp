@@ -16,8 +16,8 @@
 
 #include <boost/ut.hpp>
 
-namespace hal::navigator {  // NOLINT
-void navigator_test()       // NOLINT
+namespace hal::navigator {
+void navigator_test()
 {
   using namespace boost::ut;
   using namespace std::literals;

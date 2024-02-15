@@ -14,7 +14,7 @@
 
 #pragma once
 
-namespace hal::navigator {  // NOLINT
-class navigator  // NOLINT
+namespace hal::navigator {
+class navigator
 {};
 }  // namespace hal::navigator
