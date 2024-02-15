@@ -22,14 +22,14 @@ import os
 required_conan_version = ">=2.0.6"
 
 
-class libhal___device___conan(ConanFile):
-    name = "libhal-__device__"
+class navigator_conan(ConanFile):
+    name = "navigator"
     version = "0.0.1"
     license = "Apache-2.0"
     url = "https://github.com/conan-io/conan-center-index"
-    homepage = "https://github.com/libhal/libhal-__device__"
-    description = ("A collection of drivers for the __device__")
-    topics = ("__device__", "libhal", "driver")
+    homepage = "https://github.com/libhal/navigator"
+    description = ("A collection of drivers for the navigator")
+    topics = ("navigator", "libhal", "driver")
     settings = "compiler", "build_type", "os", "arch"
     exports_sources = ("include/*", "tests/*", "LICENSE", "CMakeLists.txt",
                        "src/*")
@@ -64,6 +64,7 @@ class libhal___device___conan(ConanFile):
     def requirements(self):
         self.requires("libhal/[^2.0.3]", transitive_headers=True)
         self.requires("libhal-util/[^3.0.1]")
+        self.requires("libhal-neo/[^0.0.1]")
 
     def layout(self):
         cmake_layout(self)
@@ -91,5 +92,5 @@ class libhal___device___conan(ConanFile):
         cmake.install()
 
     def package_info(self):
-        self.cpp_info.libs = ["libhal-__device__"]
-        self.cpp_info.set_property("cmake_target_name", "libhal::__device__")
+        self.cpp_info.libs = ["navigator"]
+        self.cpp_info.set_property("cmake_target_name", "libhal::navigator")

@@ -14,7 +14,7 @@
 
 #pragma once
 
-namespace hal::__device__ {  // NOLINT
-class __device___replace_me  // NOLINT
+namespace hal::navigator {  // NOLINT
+class navigator  // NOLINT
 {};
-}  // namespace hal::__device__
+}  // namespace hal::navigator
